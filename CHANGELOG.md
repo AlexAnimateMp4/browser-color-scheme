@@ -1,12 +1,12 @@
 <div id="changelog">
-    <h1 id="changelog-title">1.0.2</h1>
+    <h1 id="changelog-title">1.0.3</h1>
     <blockquote id="changelog-note">
-        <p id="changelog-note-text">NPM is buggy.</p>
+        <p id="changelog-note-text">NPM is REALLY buggy.</p>
     </blockquote>
     <h3 id="changelog-fixed">Fixed:</h3>
     <div id="changelog-fixed-body">
         <ul>
-            <h3>README.md</h3>
+            <h3>README.md (NPM)</h3>
             <li>Fixed <code>src</code> attributes of <code>script</code> tags.</li>
         </ul>
     </div>
