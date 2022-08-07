@@ -100,9 +100,9 @@
     <div id="readme-installation">
         <h2 id="readme-installation-title">Installation</h2>
         <h3 id="readme-installation-cdn-jsdelivr">jsDelivr CDN</h3>
-        <pre><code id="readme-installation-cdn-jsdelivr-code" class="language-html">&lt;script&nbsp;src=&quot;https://cdn.jsdelivr.net/npm/browser-color-scheme/index.js&quot;&gt;&lt;/script&gt;</code></pre>
+        <pre><code id="readme-installation-cdn-jsdelivr-code" class="language-html">&lt;script&nbsp;src="https://cdn.jsdelivr.net/npm/browser-color-scheme/index.js">&lt;/script&gt;</code></pre>
         <h3 id="readme-installation-cdn-unpkg">unpkg CDN</h3>
-        <pre><code id="readme-installation-cdn-unpkg-code" class="language-html">&lt;script&nbsp;src=&quot;https://unpkg.com/browser-color-scheme/index.js&quot;&gt;&lt;/script&gt;</code></pre>
+        <pre><code id="readme-installation-cdn-unpkg-code" class="language-html">&lt;script&nbsp;src="https://unpkg.com/browser-color-scheme/index.js">&lt;/script&gt;</code></pre>
         <h3 id="readme-installation-npm">NPM</h3>
         <pre><code id="readme-installation-npm-code" class="language-shell">$ npm i browser-color-scheme</code></pre>
         <h3 id="readme-installation-yarn">Yarn</h3>
@@ -175,7 +175,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;TESTA!&lt;/h1&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;script&nbsp;src=&quot;https://cdn.jsdelivr.net/npm/browser&#45;color&#45;scheme/index.js&quot;&gt;&lt;/script&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;script&nbsp;src="https://cdn.jsdelivr.net/npm/browser&#45;color&#45;scheme/index.js">&lt;/script&gt;
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;
 &lt;/html&gt;</code></pre>
     </div>
