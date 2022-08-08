@@ -121,7 +121,7 @@
         </div>
         <a name="readme-docs-BROWSER_COLOR_SCHEME_VALUE"></a>
         <div id="readme-docs-BROWSER_COLOR_SCHEME_VALUE">
-            <h2 id="readme-docs-BROWSER_COLOR_SCHEME_VALUE-title">window.BROWSER_COLOR_SCHEME_VALUE ⇒ <code>String: window.BROWSER_COLOR_SCHEME_LIST[0]</code></h2>
+            <h2 id="readme-docs-BROWSER_COLOR_SCHEME_VALUE-title">window.BROWSER_COLOR_SCHEME_VALUE ⇒ <code>String: window.BROWSER_COLOR_SCHEME_LIST(localStorage["theme"] || ${prefers-color-scheme}.matches)[0] || window.BROWSER_COLOR_SCHEME_LIST[0]</code></h2>
             <blockquote id="readme-docs-BROWSER_COLOR_SCHEME_VALUE-description">
                 <p>Browser color scheme name.</p>
             </blockquote>

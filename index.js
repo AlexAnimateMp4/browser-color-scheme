@@ -31,14 +31,17 @@ function BROWSER_COLOR_SCHEME(VALUE) {
         });
         if (window.BROWSER_COLOR_SCHEME_LIST.length <= 0 || default_list_color_scheme.every(function (default_color) {
             return window.BROWSER_COLOR_SCHEME_LIST.includes(default_color) == true;
-        }) == false) default_list_color_scheme.map(function (default_color) {
+        }) == false) default_list_color_scheme.filter(function (default_color) {
+            return window.BROWSER_COLOR_SCHEME_LIST.includes(default_color) == false;
+        }).map(function (default_color) {
             return window.BROWSER_COLOR_SCHEME_LIST.push(default_color);
         });
-        if (typeof window.BROWSER_COLOR_SCHEME_VALUE != `string` || window.BROWSER_COLOR_SCHEME_VALUE.length <= 0 || window.BROWSER_COLOR_SCHEME_LIST.some(function (color) {
+        BROWSER_COLOR_SCHEME(typeof window.BROWSER_COLOR_SCHEME_VALUE == `string` && window.BROWSER_COLOR_SCHEME_VALUE.length > 0 && window.BROWSER_COLOR_SCHEME_LIST.some(function (color) {
             return window.BROWSER_COLOR_SCHEME_VALUE == color;
-        }) == false) window.BROWSER_COLOR_SCHEME_VALUE = window.BROWSER_COLOR_SCHEME_LIST[0];
+        }) == true ? window.BROWSER_COLOR_SCHEME_VALUE : window.BROWSER_COLOR_SCHEME_LIST.find(function (color) {
+            return localStorage.getItem(`theme`) == color || window.matchMedia(`(prefers-color-scheme: ${color})`).matches == true;
+        }) || window.BROWSER_COLOR_SCHEME_LIST[0]);
         window.BROWSER_COLOR_SCHEME_LIST.forEach(function (color) {
-            if (window.BROWSER_COLOR_SCHEME_VALUE == color || localStorage.getItem(`theme`) == color || window.matchMedia(`(prefers-color-scheme: ${color})`).matches == true) BROWSER_COLOR_SCHEME(color);
             return window.matchMedia(`(prefers-color-scheme: ${color})`).addEventListener(`change`, function (event) {
                 if (event.matches == true) return BROWSER_COLOR_SCHEME(color);
             });
