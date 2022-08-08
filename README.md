@@ -14,7 +14,7 @@
     <a id="readme-shield-unpkg" href="https://unpkg.com/browser-color-scheme" target="_blank">
         <img id="readme-shield-unpkg-img" src="https://img.shields.io/npm/v/browser-color-scheme?label=unpkg&color=black" alt="unpkg CDN" />
     </a>
-    <a id="readme-shield-last-commit" href="https://github.com/AlexAnimateMp4/browser-color-scheme/commits/main">
+    <a id="readme-shield-last-commit" href="https://github.com/AlexAnimateMp4/browser-color-scheme/commits/master">
         <img id="readme-shield-last-commit-img" src="https://img.shields.io/github/last-commit/AlexAnimateMp4/browser-color-scheme" alt="Last commit" />
     </a>
     <a id="readme-shield-release-date" href="https://github.com/AlexAnimateMp4/browser-color-scheme/releases/latest">
@@ -65,7 +65,7 @@
     <a id="readme-shield-version">
         <img id="readme-shield-version-img" src="https://img.shields.io/github/package-json/v/AlexAnimateMp4/browser-color-scheme" alt="Version" />
     </a>
-    <a id="readme-shield-main-file" href="./index.min.js">
+    <a id="readme-shield-main-file" href="./index.js">
         <img id="readme-shield-main-file-img" src="https://img.shields.io/github/package-json/main/AlexAnimateMp4/browser-color-scheme" alt="Main file" />
     </a>
     <a id="readme-shield-languages">
