@@ -10,7 +10,13 @@ function BROWSER_COLOR_SCHEME(VALUE) {
             }) == false) VALUE = window.BROWSER_COLOR_SCHEME_VALUE;
             else window.BROWSER_COLOR_SCHEME_VALUE = VALUE;
             localStorage.setItem(`theme`, VALUE);
-            document.documentElement.setAttribute(`data-theme`, VALUE);
+            if (typeof window.BROWSER_COLOR_SCHEME_VARIANT == `string` && window.BROWSER_COLOR_SCHEME_VARIANT.length > 0) {
+                localStorage.setItem(`theme_variant`, window.BROWSER_COLOR_SCHEME_VARIANT);
+                document.documentElement.setAttribute(`data-theme`, `${VALUE}_${window.BROWSER_COLOR_SCHEME_VARIANT}`);
+            } else {
+                localStorage.removeItem(`theme_variant`);
+                document.documentElement.setAttribute(`data-theme`, VALUE);
+            };
             return true;
         } else return false;
     } catch (error) {
